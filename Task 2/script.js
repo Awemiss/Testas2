@@ -5,11 +5,11 @@ pusėje esančiame "state" skaičiavimo bloke (<div id="btn__state">0</div>)
 ------------------------------------------------------------------- */
 'use strict'
 
-document.getElementById('btn__element').addEventListener('click', paspaudimuSkaiciuokle);
+document.getElementById('btn__element').addEventListener('click', pressButton);
 
 let counter = 0;
 
-function paspaudimuSkaiciuokle() {
+function pressButton() {
     counter++;
-    document.getElementById("btn__state").innerHTML = $;{counter};  // check later the $; part
+    document.getElementById("btn__state").innerHTML = counter;
 };
