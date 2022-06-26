@@ -19,3 +19,19 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+function getUserAverageAge(users) {
+  return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+};
+console.log(getUserAverageAge(users).toFixed(2))
+
+const newUsers = users.map(({age, ...rest}) => {
+  return rest;
+});
+
+console.log(newUsers);
+
+// users.array.forEach(element => {
+//   delete element['test'];
+// });
+// console.log(users);
