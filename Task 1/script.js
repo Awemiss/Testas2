@@ -9,15 +9,18 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
 document.getElementById('search').addEventListener('input' , function(e){
+    //trūksta e.preventDefault, nes dabar reikšmės suskaičiuojamos automatiškai, bet paspaudus calculate, rezultatai išvalomi
+    //taip pat reikėtų naudoti arrow funkciją. 
     let kg = e.target.value;
     let input = document.getElementById('search');
     let data = input.value;
+    //visi aukščiau išvardinti kintamieji turėtų būti const
     document.getElementById('lbOutput').innerHTML= kg * 2.2046;
     document.getElementById('gramsOutput').innerHTML= kg / 0.0010000;
     document.getElementById('ozOutput').innerHTML= kg * 35.274;
     document.getElementById('output').style.visibility='visible';
 
-    if (data == '') {
+    if (data == '') { //palyginimui visuomet naudojame trigubą lygybę
         document.getElementById('output').style.visibility='hidden';
     }
 });

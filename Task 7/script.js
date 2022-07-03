@@ -11,4 +11,5 @@ const audi = {
   color: 'white',
 };
 
+//vėl pamesta funkcija
 console.log(Object.keys(audi));

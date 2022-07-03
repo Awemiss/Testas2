@@ -25,6 +25,12 @@ function getUserAverageAge(users) {
 };
 console.log(getUserAverageAge(users).toFixed(2))
 
+//čia vėl kintamasis, o ne funkcija. Taip pat grąžinama per daug duomenų. Sprendimo pvz:
+// function getUsersNames(users){
+//   return users.map(user => user.name);
+// }
+// console.log(getUsersNames(users));
+
 const newUsers = users.map(({age, ...rest}) => {
   return rest;
 });
