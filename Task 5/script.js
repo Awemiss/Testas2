@@ -20,7 +20,8 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
 
-const filterDogOwers = users.filter(users => users.hasDog > false);
+//užduotis buvo parašyti funkcijas. Čia pateiktos konstantos. 
+const filterDogOwers = users.filter(users => users.hasDog > false); //čia užtenka tiesiog users.hasDog. Taip automatiškai reikšmė yra true
 console.log(filterDogOwers);
 
 const filterAdults = users.filter(person => person.age > 18);

@@ -11,5 +11,5 @@ let counter = 0;
 
 function pressButton() {
     counter++;
-    document.getElementById("btn__state").innerHTML = counter;
+    document.getElementById("btn__state").innerHTML = counter;  //innerHTML naudojame tuomet, kai priskiriame kokį nors html kodą. Šiuo atveju pakaktų tik innerText
 };
